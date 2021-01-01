@@ -5,15 +5,13 @@
 - pcntl extension installed
 ## Installation
 ```bash
-# Clone repo to magento 2 root
-$ git clone https://github.com/yourborjia/amphp-magento-graphql
 # Install dependencies via composer
-$ composer require amphp/http-server amphp/log
+$ composer require yourborjia/namphp-magento-graphql
 ```
 ## Usage
 ```bash
 # Run server from magento root
-$ php amphp-magento-graphql/bin/server.php
+$ vendor/bin/graphql-async-server
 ```
 ## Benchmarks
 Sample GraphQl query for testing purposes:

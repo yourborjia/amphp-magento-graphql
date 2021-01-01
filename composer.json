@@ -1,0 +1,37 @@
+{
+  "name": "yourborjia/amphp-magento-graphql",
+  "description": "Asynchronous Magento 2 GraphQl endpoint",
+  "type": "library",
+  "homepage": "https://github.com/yourborjia/amphp-magento-graphql",
+  "license": "OSL-3.0",
+  "authors": [
+    {
+      "name": "Vladislav Borisenko",
+      "email": ""
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/yourborjia/amphp-magento-graphql/issues"
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.2",
+    "ext-pcntl": "*",
+    "amphp/http-server": "^2.1",
+    "amphp/log": "^1.1",
+    "laminas/laminas-http": "^2.6.0",
+    "magento/framework": ">=102.0.1"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "bin": [
+    "graphql-async-server"
+  ],
+  "autoload": {
+    "psr-4": {
+      "AmGraphQl\\App\\": "src/"
+    }
+  }
+}
